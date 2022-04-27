@@ -2,12 +2,15 @@ import logging
 
 logging.basicConfig(level=logging.INFO, filename='log.log', filemode='w', format='%(asctime)s - %(levelname) - %(message)s')
 
+# Directly log with the basicConfig above
+
 # logging.info('info')
 # logging.debug('debug')
 # logging.warning('warning')
 # logging.error('error')
 # logging.critical('critical')
 
+# Create a custom logger to use in other modules
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
