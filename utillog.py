@@ -8,3 +8,5 @@ logging.basicConfig(level=logging.INFO, filename='log.log', filemode='w', format
 # logging.error('error')
 # logging.critical('critical')
 
+
+logger = logging.getLogger(__name__)
