@@ -18,8 +18,8 @@ handler.setFormatter(formatter)
 
 logger.addHandler(handler)
 
-logger.info('info')
-logger.debug('debug')
-logger.warnning('warning')
-logger.error('error')
-logger.critical('critical')
+# logger.info('info')
+# logger.debug('debug')
+# logger.warnning('warning')
+# logger.error('error')
+# logger.critical('critical')
