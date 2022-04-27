@@ -10,3 +10,5 @@ logging.basicConfig(level=logging.INFO, filename='log.log', filemode='w', format
 
 
 logger = logging.getLogger(__name__)
+logger.setLevel(logging.INFO)
+
