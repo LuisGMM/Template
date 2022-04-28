@@ -36,7 +36,7 @@ logging.basicConfig(level=logging.INFO, filename='log.log', filemode='w',
 #     logging.error('ZeroDivisionError', exc_info=True)
 
 
-try:
-    1/0
-except ZeroDivisionError as e:
-    logging.exception('ZeroDivisionError')
+# try:
+#     1/0
+# except ZeroDivisionError as e:
+#     logging.exception('ZeroDivisionError')
