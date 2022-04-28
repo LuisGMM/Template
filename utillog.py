@@ -28,3 +28,10 @@ logging.basicConfig(level=logging.INFO, filename='log.log', filemode='w',
 # logger.error('error')
 # logger.critical('critical')
 
+# Two ways to log exceptions
+
+try:
+    1/0
+except ZeroDivisionError as e:
+    logging.error('ZeroDivisionError', exc_info=True)
+
