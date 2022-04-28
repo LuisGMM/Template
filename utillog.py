@@ -1,6 +1,7 @@
 import logging
 
-logging.basicConfig(level=logging.INFO, filename='log.log', filemode='w', format='%(asctime)s - %(levelname) - %(message)s')
+logging.basicConfig(level=logging.INFO, filename='log.log', filemode='w',
+                    format='%(asctime)s %(levelname)s %(message)s')
 
 # Directly log with the basicConfig above
 
@@ -12,17 +13,18 @@ logging.basicConfig(level=logging.INFO, filename='log.log', filemode='w', format
 
 # Create a custom logger to use in other modules
 
-logger = logging.getLogger(__name__)
-logger.setLevel(logging.INFO)
+# logger = logging.getLogger(__name__)
+# logger.setLevel(logging.INFO)
 
-handler = logging.FileHandler('log.log')
-formatter = logging.Formatter('%(asctime)s - %(levelname) - %(message)s')
-handler.setFormatter(formatter)
+# handler = logging.FileHandler('log.log')
+# formatter = logging.Formatter('%(asctime)s - %(levelname) - %(message)s')
+# handler.setFormatter(formatter)
 
-logger.addHandler(handler)
+# logger.addHandler(handler)
 
 # logger.info('info')
 # logger.debug('debug')
 # logger.warnning('warning')
 # logger.error('error')
 # logger.critical('critical')
+
